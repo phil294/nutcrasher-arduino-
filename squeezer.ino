@@ -312,12 +312,12 @@ void setup() {
   song_length = song_imperial_march_length;
   song_speed = song_imperial_march_speed;
   song_cur_i = 0;
-  play = true;
+  play = false; // auf true ändern  = bei beginn wird die sendung mit der maus abgespielt
 }
 
 // the loop routine runs over and over again forever:
 void loop() {
-  // BUTTONS
+  // BUTTONS // todo https://www.arduino.cc/en/Reference/AttachInterrupt
   int status_ext = digitalRead(PIN_BUTTON_EXT);
   int status_ret = digitalRead(PIN_BUTTON_RET);
   // MOTOR
